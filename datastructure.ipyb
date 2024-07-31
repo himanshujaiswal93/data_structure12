@@ -1,0 +1,147 @@
+# q.1 Discuss string slicing and provide examples
+
+# Ans=> String slicing in Python allows you to extract a portion of a string by specifying a start and end index.
+#  It follows the format string[start:end], where start is the index where slicing begins (inclusive) and end is
+#  the index where it ends (exclusive).
+
+# Python program to demonstrate
+# string slicing
+# String slicing
+String = 'ASTRING'
+# Using slice constructor
+s1 = slice(3)
+s2 = slice(1, 5, 2)
+s3 = slice(-1, -12, -2)
+print("String slicing")
+print(String[s1])
+print(String[s2])
+print(String[s3])
+
+# Q.2 Explain the key features of lists in Pythone
+
+# Ans=> Lists are ordered. 
+# 1 Lists can contain any arbitrary objects. 
+# 2 List elements can be accessed by index. 
+# 3 Lists can be nested to arbitrary depth.
+# 4 Lists are mutable. 5 Lists are dynamic.
+
+#Q.3 // Describe how to accesse modify and delete elements in a list with examples//
+
+ # Python program to demonstrate
+# accessing of element from list
+# Creating a List with
+# the use of multiple values
+List = ["pw", "For", "skills"]
+# accessing a element from the
+# list using index number
+print("Accessing a element from the list")
+print(List[0])
+print (List[1])
+print(List[2])
+
+# Q.4 Compare and contrast tuples and lists with examples
+
+# Ans=> List and Tuple in Python are the data structures that store and manipulate a collection of elements.
+# Both are used to store the data, and the values stored can be accessed using indexes. But the key difference
+# between both is that lists are mutable, and tuples are immutable. In this article, we will discuss what lists 
+# and tuples in Python are and the key differences between lists and tuples with the help of examples.
+
+#  1 Tuples are immutable                                             1 list are unmutable.
+#  2 The implication of iterations is comparatively Faster            2  the implication of iterations is slower.
+#  3 A Tuple data type is appropriate for accessing the elements      3 The list is better for performing operations, 
+ #                                                                       such as insertion and deletion.
+#  4 Tuple consumes less memory as compared to the list               4 Lists consume more memory.
+#  5 Tuple does not have many built-in methods.                       5 Lists have several built-in methods.
+#  6 Unexpected changes and errors are more likely to occur 
+#     Because tuples don’t change they are far.
+
+# Creating a List with
+# the use of Numbers
+# code to test that tuples are mutable
+List = [1, 2, 4, 4, 3, 3, 3, 6, 5]
+print("Original list ", List)
+List[3] = 77
+print("Example to show mutability ", List)
+
+# code to test that tuples are immutable
+tuple1 = (0, 1, 2, 3)
+tuple1[0]  
+print(tuple1)
+
+# Q.5 Describe the key features of sets and provide examples of their use
+
+# Ans=> A well-defined collection of Objects or items or data is known as a set.
+#  The objects or data are known as the element. For Example, the boys in a classroom can be put in one set
+# , all integers from 1 to 100 can become one set, and all prime numbers can be called an Infinite set.
+#  The symbol used for sets is { }.
+
+# fetures
+
+# 1 Enhanced Security. 
+# 2 Trust in Online Transactions.
+# 3 Streamlined Payment Processes.
+# 4 Protection Against Fraud. 
+# 5 Confidentiality of Cardholder Information.
+# 6 Global Interoperability. 7 Compliance with Regulatory Standards.
+
+# Q.6 Descuss the use cases of tuples and sets in Python programming
+
+# Ans=> tuples:- Tuple. Tuples are used to store multiple items in a single variable. Tuple is one of 4 built-in data types in Python 
+# used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+# set:- A common use of sets in Python is computing standard math operations such as union, intersection, difference, and symmetric
+#  difference. The image below shows a couple standard math operations on two sets A and B. The red part of each Venn diagram is 
+# the resulting set of a given set operation.
+
+# Q.7 Describe how to add modify and delete items in a dictonary with examples
+
+# Ans=> Using an assignment operator, we can add new things or change the value of existing items.
+#  By declaring value together with the key, for example, Dict[Key] = ‘Value’, one value at a time can be added to a Dictionary.
+#  Another approach is to use Python’s update() function.
+
+ 
+   #update and add eliment
+    # Python program to update/add elements in a dictionary
+my_dict = {'Car': 'Audi', 'Bike': 'Honda'}
+print('Original Dictionary:', my_dict)
+
+# updating value of an existing key
+my_dict['Bike'] = 'Ducati'
+print('Updated Dictionary:', my_dict)
+# adding new value
+my_dict['Plane'] = 'Boeing'
+print('Updated Dictionary:', my_dict)
+
+
+#Removing elements from Dictionary.
+##A key can be removed from a dictionary in three ways: from an individual entry, from all entries, or from the entire dictionary.
+# The pop() function can be used to remove a single element. The value of the key that has been specified to be eliminated is returned
+#  by the pop() function. To randomly remove any elements (key-value pairs) of the dictionary, we can use the popitem() It returns
+#    the arbitrary key-value pair that has been removed from the dictionary. Using the clear() method, all elements can be eliminated
+#      at once. The del keyword is used to completely delete the entire dictionary. Example
+
+# Python program to remove/delete elements from a dictionary
+
+my_dict = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five'}
+print('Original Dictionary:', my_dict)
+
+# removing single element
+print(my_dict.pop(4))
+print('Updated Dictionary:', my_dict)
+
+# adding new value
+print(my_dict.popitem())
+print('Updated Dictionary:', my_dict)
+
+# remove all items
+my_dict.clear()
+print(my_dict)
+
+
+#Q.8 Discuss the importance of dictionary keys being immutable and provide example
+
+#Ans=> Immutable data types such as strings, numbers, and tuples (if they contain only immutable elements) can be used as
+#  keys in a dictionary. Mutable data types like lists cannot be used as keys because they can be changed after being created,
+#  which could lead to unexpected behavior when using a dictionary.
+
+
+
